@@ -1,3 +1,14 @@
-#Todo Timer here
+<div class="center">
+  <form action='/practice/<%= @cur_sess.id %>' method='post'>
+    <input type='hidden' name='_method' value='put'>
+    <input type='submit' value='stop session'>
+  </form>
 
-<form action='/practice/<%= '
+  <br>
+
+  you practiced <%= @cur_sess.duration %> minutes
+
+  <br>
+
+  <a href='/practice'>home</a>
+</div>
