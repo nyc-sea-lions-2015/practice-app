@@ -1,5 +1,15 @@
 <div class='center'>
-  <h3>Let's practice</h3>
+  <h3>add a guitar</h3>
+  <form action='/guitar/new' method='post'>
+    style/model: <input type='text' name='guitar_style' />
+    <input type="submit" value="add">
+  </form>
+
+  <br>
+
+  <a href='/guitars'><h3>stats</h3></a>
+
+  <h3>let's practice</h3>
 
   <form action='/practice' method='post'>
   <% @guitars.each do |guitar| %>
