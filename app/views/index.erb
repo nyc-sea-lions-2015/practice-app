@@ -1,7 +1,13 @@
 <div class='center'>
   <h3>Let's practice</h3>
 
-  <button class='practice-btn'>
-    <a href=''>Start Session</a>
-  </button>
+  <form action='/practice' method='post'>
+  <% @guitars.each do |guitar| %>
+    <input type='radio' name='guitar_style' value='<%= guitar.id %>'><%=guitar.style%></input>
+  <% end %>
+
+    <br>
+    <input value='start session' class='practice-btn' type='submit' />
+
+  </form>
 <div>
