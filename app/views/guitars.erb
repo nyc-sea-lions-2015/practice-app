@@ -1,0 +1,9 @@
+<div class='center'>
+  <h3>stats</h3>
+  <% @guitars.each do |guitar| %>
+    style: <%= guitar.style %> |
+    sessions: <%= guitar.practice_sessions.count %><br>
+  <% end %>
+</div>
+
+<a href='/practice'>home</a>
