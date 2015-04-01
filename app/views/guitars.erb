@@ -2,8 +2,11 @@
   <h3>stats</h3>
   <% @guitars.each do |guitar| %>
     style: <%= guitar.style %> |
-    sessions: <%= guitar.practice_sessions.count %><br>
+    sessions: <%= guitar.practice_sessions.count %>
+    <br>
   <% end %>
+  cumulative min of practice: <%= cumulative_minutes(User.find(session[:user_id])) %>
+  <br>
+  <a href='/practice'>home</a>
 </div>
 
-<a href='/practice'>home</a>
