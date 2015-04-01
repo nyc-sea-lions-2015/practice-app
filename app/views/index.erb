@@ -12,12 +12,15 @@
   <h3>let's practice</h3>
 
   <form action='/practice' method='post'>
-  <% @guitars.each do |guitar| %>
+    <% @guitars.each do |guitar| %>
     <input type='radio' name='guitar_style' value='<%= guitar.id %>'><%=guitar.style%></input>
-  <% end %>
+    <% end %>
 
     <br>
     <input value='start session' class='practice-btn' type='submit' />
 
   </form>
+  <br>
+
+
 <div>
