@@ -1,3 +1,6 @@
 #Todo Timer here
 
-<form action='/practice/<%= '
+<form action='/practice/<%= @cur_sess.id %>' method='post'>
+  <input type='hidden' name='_method' value='put'>
+  <input type='submit' value='stop session'>
+</form>
