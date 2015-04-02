@@ -1,3 +1,5 @@
+# Good RESTful routes!
+#
 get '/' do
   erb :login
 end
